@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+@import "normalize.css";
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    padding: 1rem 2rem;
+    background-color: #4a90e2;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#blog {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#blog article {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 1024px) {
+    #blog {
+        padding: 1rem;
+    }
+}
+
+.article-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.article-header img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.article-title {
+    color: #4a90e2;
+    font-size: 2rem;
+    margin: 0.5rem 0;
+}
+
+.article-meta {
+    font-size: 0.875rem;
+    color: #777;
+}
+
+.article-content {
+    margin-top: 1rem;
+    line-height: 1.6;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 1rem;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.button-submit {
+    background-color: #4a90e2;
+}
+
+.button-submit:hover {
+    background-color: #357ab8;
+}
+
+.button-delete {
+    background-color: #e94e77;
+}
+
+.button-delete:hover {
+    background-color: #c4375d;
+}
